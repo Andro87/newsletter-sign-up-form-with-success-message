@@ -1,0 +1,42 @@
+@use "styles/helpers" as *;
+
+.box_container {
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include breakpoint($large) {
+        background-color: var(--white);
+        border-radius: 2.25rem;
+        max-width: 31.5rem;
+        min-height: initial;
+        max-height: 32.5rem;
+        margin: auto;
+        padding: 3rem 4rem;
+        justify-content: initial;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.btn_dismiss {
+    margin-top: auto;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    padding: 0.88rem;
+    font-family: 1rem;
+    cursor: pointer;
+    @include transition;
+    @include breakpoint($large) {
+        margin-top: 1.5rem;
+        &:hover {
+            background: linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+            box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+        }
+    }
+}

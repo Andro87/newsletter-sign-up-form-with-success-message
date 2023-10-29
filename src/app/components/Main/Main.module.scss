@@ -1,0 +1,114 @@
+@use "styles/helpers" as *;
+
+.main_container {
+    @include breakpoint($large) {
+        max-width: 58rem;
+        max-height: 40rem;
+        border-radius: 2.25rem;
+        background-color: var(--white);
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+.main_img {
+    display: flex;
+    picture {
+        display: flex;
+    }
+}
+
+.main_info {
+    padding: 2.5rem 1.5rem;
+    @include breakpoint($large) {
+        max-width: 24rem;
+        padding: initial;
+        padding-left: 2rem;
+        margin-block: auto;
+    }
+}
+
+.main_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.list_item {
+    display: flex;
+    gap: 1rem;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include breakpoint($medium) {
+        max-width: 40rem;
+    }
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+
+    p {
+        color: var(--tomato);
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 150%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0;
+    }
+    label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    input {
+        border-radius: 0.5rem;
+        border: 1px solid rgba(25, 24, 43, 0.25);
+        padding: 1rem 1.5rem;
+        &::placeholder {
+            color: var(--dark-slate-grey);
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.25;
+        }
+    }
+}
+
+.error_message {
+    input {
+        border: 1px solid var(--tomato);
+        background-color: rgba(255, 97, 85, 0.15);
+        color: var(--tomato);
+    }
+}
+
+.form_btn {
+    border-radius: 0.5rem;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    @include transition;
+
+    &:hover {
+        background: linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+    }
+}

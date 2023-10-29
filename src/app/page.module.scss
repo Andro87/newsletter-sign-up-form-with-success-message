@@ -1,0 +1,9 @@
+@use "styles/helpers" as *;
+
+.home_container {
+    min-height: 100vh;
+    @include breakpoint($large) {
+        background-color: var(--charcoal-grey);
+        padding: 10rem;
+    }
+}
