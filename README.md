@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Newsletter sign-up form](./public/assets/screenshoot.png)
+![Newsletter sign-up form](./public/assets/screenshot.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Solution URL](https://github.com/Andro87/newsletter-sign-up-form-with-success-message.git)
+-   Live Site URL: [Live site URL ](https://newsletter-sign-up-form-with-success-message-six.vercel.app/)
 
 ## My process
 
